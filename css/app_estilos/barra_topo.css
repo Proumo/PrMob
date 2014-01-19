@@ -1,0 +1,18 @@
+.barra_topo .acoes_barra {
+	color: white;
+	background-color: #2779db;
+    padding: 3% 4%;
+    font-size: 1.7em;
+	background-image: -webkit-linear-gradient(top, #2779db 0%, #2779db 0%, #1e5799 73.5%, #1e5799 100%);
+}
+
+.barra_topo .fi-torsos-all {
+	float: right;
+	/*margin: 0 48% 0 0;*/
+}
+
+.barra_topo center {
+	font-family: 'Lobster';
+	margin: -7% 0 2% 0;
+	font-size: 1.2em;
+}

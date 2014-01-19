@@ -1,0 +1,46 @@
+/*
+@import "banner.css";
+@import "anuncio.css";
+*/
+
+@import "barra_topo.css";
+@import "barra_lateral.css";
+
+.icone-amigos {
+	display: inline-block;
+	width: 24px;
+	height: 14px;
+	margin-top: 1px;
+	line-height: 14px;
+	vertical-align: text-top;
+	background-image: url("imgs/icon_amigos_2.png");
+}
+
+body .container #loading {
+    margin: 10% auto;
+    width: 15%;
+}
+
+body #banner {
+    font-family: 'Lobster';
+}
+
+.overflow_val_on {
+	overflow: auto;
+}
+
+.overflow_val_off {
+	overflow: hidden;
+}
+
+.flow_x_off {
+    overflow-x:hidden;
+}
+
+/* Conserta bug do XDK no Body que comprime o app **/
+body, html {
+    width:100%;
+    height: 100%;
+    margin: 0;    
+    padding: 0;
+}

@@ -1,0 +1,36 @@
+#barra_lateral {
+	float: left;
+	display: none;
+	background: whitesmoke;
+	margin-right: 1%;
+	height: 120%;
+	min-width: 88%;
+}
+
+#barra_lateral .logo {
+	width: 45%;
+	margin: 15% 25% 0;
+}
+
+#barra_lateral h5 {
+	text-align: center;
+}
+
+#barra_lateral input {
+	width: 90%;
+	margin: 3% 0;
+	padding: 6% 0 6% 4%;
+}
+
+#barra_lateral [readonly=true] {
+	background: white;
+}
+
+#barra_lateral #chave {
+	width: 90.2%;	
+}
+
+#barra_lateral form .btn-primary {
+	margin: 5% 0 0 0;
+	width: 95%;
+}

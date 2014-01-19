@@ -1,0 +1,86 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html ng-app="ProumoApp">
+<head>
+  <title>Your New Application</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style type="text/css">
+    /* Prevent copy paste for all elements except text fields */
+    *  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+    input, textarea  { -webkit-user-select:text; }
+  </style>
+
+  <script type="text/javascript" src="intelxdk.js"></script>
+  <script type="text/javascript" src="js/jq/jq.min.js"></script>
+  <script type="text/javascript" src="js/angular/angular.min.js"></script>
+  <script type="text/javascript" src="js/angular/angular-sanitize.min.js"></script>
+  <script type="text/javascript" src="js/angular/angular-touch.min.js"></script>
+
+  <script type="text/javascript">
+    /* This code is used to run as soon as Intel activates */
+    var onDeviceReady=function(){
+      //hide splash screen
+      intel.xdk.device.hideSplashScreen();
+    };
+    document.addEventListener("intel.xdk.device.ready",onDeviceReady,false);
+    </script>
+</head>
+<body ng-controller="AnunciosCtrl" class="overflow_val_on" ng-init="AssinarApp()">
+    <!-- Barra lateral -->
+    <div id="barra_lateral"  style="display: hide;">
+      <img src="img/imgs-proumo/logo-256.png" class="logo">
+      <h5>Um mundo de diversão pra você</h5>
+      
+      <form id="pesquisa_evento" action="http://proumo.tk/" ng-submit="search()">
+        <div class="row">
+          <center><input id="chave" type="text" placeholder="Nome, Tipo ou Lugar" name="nome_evento"></center>
+        </div>  
+
+        <div class="row">
+          <center><input type="text" placeholder="Data" class="dater_picker" name="data_inicio" readonly="true"></center>
+        </div>
+
+        <!--<input id="pog" type="hidden" name="eid" value="Brasília" ng-init="search()">-->
+
+        <center>
+          <button type="submit" class="btn btn-large btn-primary"><i class="fa fa-search"></i></button>
+        </center>
+      </form>
+    </div>
+    <!-- Barra lateral -->
+
+    <!-- Barra de Ações -->
+    <nav class="barra_topo">
+        <div class="acoes_barra">
+          <i class="fi-torsos-all"></i>
+          <i id="bnt_search" class="fa fa-bars"></i>
+          <center><span>ProumoEvents</span></center>
+        </div>
+    </nav>
+    <!-- /acoes -->
+
+    <!-- Contem o layout real -->
+    <div id="resultado_pesquisas" class="flow_x_off">
+        
+    </div>
+
+    <!-- includes JS -->
+    <script type="text/javascript" src="js/app_js/util.js"></script>
+    <script type="text/javascript" src="js/jq/jq.swipe.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/bootstrap/locales/bootstrap-datepicker.pt-BR.js"></script>
+
+    <script type="text/javascript" src="js/app_js/app_jq.js"></script>
+    <script type="text/javascript" src="js/app_js/anuncio_ang.js"></script>
+    
+    <script type="text/javascript" src="js/app_js/anuncio_jq.js"></script>
+    <script type="text/javascript" src="js/app_js/jq_helpers_funcs.js"></script>
+    <script type="text/javascript" src="js/app_js/angular_helpers_funcs.js"></script>
+    <!-- /includes JS -->
+</body>
+</html>
