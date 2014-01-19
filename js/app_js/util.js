@@ -95,3 +95,13 @@ function add_face_link(anuncios){
 function sidebar_visivel(){
     return $('#barra_lateral').is(":visible");
 }
+
+function assinar_app(){
+    url_base_fb_login = 'http://www.facebook.com/dialog/oauth?client_id=';
+    app_id = 128300630673976;
+    param_redirect = '&redirect_uri=http://';
+    val_redirect = 'events.proumo.com.br/';
+    param_touch = '&display=touch&state=';
+
+    window.location = url_base_fb_login + app_id + param_redirect + val_redirect + param_touch;
+}

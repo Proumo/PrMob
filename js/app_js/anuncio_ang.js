@@ -134,9 +134,11 @@ ProumoApp.controller('AnunciosCtrl', function ($scope, $http) {
     * Joga o usuário na tela de Login do Facebook
     */
     $scope.AssinarApp = function(){
-        $http.get(url_porta_mob).
-        success(function(retorno, status) {            
-            console.log('retorno cross: ' + retorno);
+        url_request = url_porta_mob+'url_retorno='+encodeURIComponent(document.URL);
+
+        $http.get(url_request).
+        success(function(retorno, status) {
+            if(retorno == 'true') assinar_app();
         });
     }
 });
