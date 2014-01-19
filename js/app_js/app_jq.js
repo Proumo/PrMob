@@ -93,5 +93,3 @@ $("body").swipe({
 		else toggle_class($('body'), 'overflow_val_on', 'overflow_val_off');
 	}
 });
-
-$('#resultado_pesquisas').html(document.URL);

@@ -4,6 +4,7 @@
 */
 
 @import "barra_topo.css";
+@import "pesquisa.css";
 @import "barra_lateral.css";
 
 .icone-amigos {

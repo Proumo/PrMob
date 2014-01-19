@@ -48,8 +48,6 @@ ProumoApp.controller('AnunciosCtrl', function ($scope, $http) {
             $scope.anuncios = corrige_json(anuncios);
             array_anuncios = $scope.anuncios;
             
-            $('#resultado_pesquisas').html($scope.anuncios);
-            
             // Resetagens após 
             preparar_tooltips();
             ativa_btns();
