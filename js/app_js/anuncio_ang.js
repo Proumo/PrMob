@@ -19,7 +19,7 @@ ProumoApp.controller('AnunciosCtrl', function ($scope, $http) {
     uri = 'https://apps.facebook.com/proumoevents/';
     param = '?link_externo=true';
 
-    url_convite = 'https://www.facebook.com/dialog/apprequests?%20app_id='+app_id+'&%20message='+msg+'&%20redirect_uri='+uri+param;
+    $scope.url_convite = 'https://www.facebook.com/dialog/apprequests?%20app_id='+app_id+'&%20message='+msg+'&%20redirect_uri='+uri+param;
 
     // Controle que faz sumir e aparecer o overflow
     $scope.overflow_val = 'overflow_val_on';

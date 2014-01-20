@@ -14,7 +14,10 @@
     input, textarea  { -webkit-user-select:text; }
   </style>
 
+  <!-- XDK -->
   <script type="text/javascript" src="intelxdk.js"></script>
+  <!-- /XDK -->
+
   <script type="text/javascript" src="js/jq/jq.min.js"></script>
   <script type="text/javascript" src="js/angular/angular.min.js"></script>
   <script type="text/javascript" src="js/angular/angular-sanitize.min.js"></script>
@@ -29,10 +32,10 @@
     document.addEventListener("intel.xdk.device.ready",onDeviceReady,false);
     </script>
 </head>
-<body ng-controller="AnunciosCtrl" class="overflow_val_on" ng-init="AssinarApp()">
+<body ng-controller="AnunciosCtrl" class="overflow_val_on" ng-init="AssinarApp()"> <!-- ng-init="AssinarApp()" -->
     <!-- Barra lateral -->
     <div id="barra_lateral"  style="display: hide;">
-      <img src="img/imgs-proumo/logo-256.png" class="logo">
+      <img src="img/imgs-proumo/logo-new-256.png" class="logo">
       <h5>Um mundo de diversão pra você</h5>
       
       <form id="pesquisa_evento" action="http://proumo-mvp.herokuapp.com/app/helpers/helper_faceapp.php" ng-submit="search()">

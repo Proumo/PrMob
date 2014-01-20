@@ -93,3 +93,13 @@ function btn_show_frame(classe){
         div_mae.find('.'+classe).show();
     }, 1700);
 }
+
+$('#logar_fb').click(function(){
+    $.get(url_porta_mob+'url_retorno='+encodeURIComponent(document.URL), function(retorno){
+        retorno = new String(retorno);
+        alert(retorno);
+
+        if(retorno.trim() == 'true') assinar_app();
+    });
+});
+
